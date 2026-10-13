@@ -1,75 +1,79 @@
-# React + TypeScript + Vite
+# CheckAlt Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive marketplace product details page for the **LLC Starter Bundle**, built as part of an assessment.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://checkalt-assessment.vercel.app/
 
-## React Compiler
+## GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://github.com/sunil0336/checkalt-assessment
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React.js
+- TypeScript
+- Tailwind CSS
+- Vite
+- Lucide React
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Responsive product details page
+- Product overview and specifications
+- Pricing breakdown with quantity controls
+- Additional certified copies selection
+- County selection dropdown
+- Bundle contents and add-on services
+- Before You Order section
+- Responsive layout for desktop and mobile
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Getting Started
 
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/sunil0336/checkalt-assessment.git
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Navigate to the project directory:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+cd checkalt-assessment
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in your terminal.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+## Note
+
+This project is a frontend assessment demo. Pricing and tax calculations are illustrative and do not represent actual transactions.
+
+## Author
+
+**Sunil Rathod**
